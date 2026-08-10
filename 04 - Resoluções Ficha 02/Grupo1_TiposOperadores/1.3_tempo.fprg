@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1.3_tempo"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-10 02:46:39 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjM4OjE0ICI7MjYwMg=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjQ2OjM5ICI7MTsyNzE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="segundos, minutos, resto" type="Integer" array="False" size=""/>
+            <output expression="&quot;N&#250;mero de segundos: &quot;" newline="True"/>
+            <input variable="segundos"/>
+            <assign variable="minutos" expression="segundos / 60"/>
+            <assign variable="resto" expression="segundos % 60"/>
+            <output expression="minutos &amp; &quot;min e &quot; &amp; resto &amp; &quot;seg&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

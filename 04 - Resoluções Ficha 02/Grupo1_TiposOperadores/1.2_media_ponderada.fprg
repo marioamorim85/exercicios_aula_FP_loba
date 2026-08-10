@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1.2_media_ponderada"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-10 02:38:09 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjMwOjI5ICI7MjYwMA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjM4OjA5ICI7MTsyNzE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Primeira avalia&#231;&#227;o: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Segunda avalia&#231;&#227;o: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <assign variable="media" expression="nota1 * 0.4 + nota2 * 0.6"/>
+            <output expression="&quot;M&#233;dia ponderada: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
