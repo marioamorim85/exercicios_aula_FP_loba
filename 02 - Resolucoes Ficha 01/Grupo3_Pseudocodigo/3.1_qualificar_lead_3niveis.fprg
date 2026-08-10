@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="qualificar_lead"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="orcamento" type="Real" array="False" size=""/>
+<declare name="interesse, prioridade" type="String" array="False" size=""/>
+<output expression="&quot;Orçamento do lead: &quot;" newline="True"/>
+<input variable="orcamento"/>
+<output expression="&quot;Interesse (alto/medio/baixo): &quot;" newline="True"/>
+<input variable="interesse"/>
+<if expression="orcamento &gt;= 10000 And interesse == &quot;alto&quot;">
+<then>
+<assign variable="prioridade" expression="&quot;Quente&quot;"/>
+</then>
+<else>
+<if expression="orcamento &gt;= 5000">
+<then>
+<assign variable="prioridade" expression="&quot;Morno&quot;"/>
+</then>
+<else>
+<assign variable="prioridade" expression="&quot;Frio&quot;"/>
+</else>
+</if>
+</else>
+</if>
+<output expression="&quot;Prioridade: &quot; &amp; prioridade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

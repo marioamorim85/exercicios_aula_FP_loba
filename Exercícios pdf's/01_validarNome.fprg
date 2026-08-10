@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_validarNome"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 03:32:29 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAzOjI1OjE2ICI7MjYwNA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAzOjMyOjI5ICI7MTsyNzE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Introduza o seu nome: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <if expression="nome == &quot;M&#225;rio&quot; Or nome == &quot;Jo&#227;o&quot;">
+                <then>
+                    <output expression="&quot;Ol&#225; Professor &quot; &amp; nome" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ol&#225; &quot; &amp; nome" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

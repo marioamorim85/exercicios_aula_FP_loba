@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="desconto_escalao"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="valor, desconto, total" type="Real" array="False" size=""/>
+<output expression="&quot;Valor da compra: &quot;" newline="True"/>
+<input variable="valor"/>
+<if expression="valor &gt; 200">
+<then>
+<assign variable="desconto" expression="valor * 0.20"/>
+</then>
+<else>
+<if expression="valor &gt; 100">
+<then>
+<assign variable="desconto" expression="valor * 0.10"/>
+</then>
+<else>
+<assign variable="desconto" expression="0"/>
+</else>
+</if>
+</else>
+</if>
+<assign variable="total" expression="valor - desconto"/>
+<output expression="&quot;Desconto: &quot; &amp; desconto &amp; &quot;  |  Valor final: &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

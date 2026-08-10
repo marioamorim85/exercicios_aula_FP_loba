@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="maior_lead"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="orc1, orc2" type="Real" array="False" size=""/>
+<output expression="&quot;Orçamento do lead 1: &quot;" newline="True"/>
+<input variable="orc1"/>
+<output expression="&quot;Orçamento do lead 2: &quot;" newline="True"/>
+<input variable="orc2"/>
+<if expression="orc1 &gt; orc2">
+<then>
+<output expression="&quot;O lead 1 tem maior orçamento&quot;" newline="True"/>
+</then>
+<else>
+<if expression="orc1 &lt; orc2">
+<then>
+<output expression="&quot;O lead 2 tem maior orçamento&quot;" newline="True"/>
+</then>
+<else>
+<output expression="&quot;Os leads têm o mesmo orçamento&quot;" newline="True"/>
+</else>
+</if>
+</else>
+</if>
+        </body>
+    </function>
+</flowgorithm>

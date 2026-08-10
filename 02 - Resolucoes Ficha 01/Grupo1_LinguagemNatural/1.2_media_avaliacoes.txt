@@ -1,0 +1,8 @@
+Resolução — 1.2 Média de duas avaliações (linguagem natural)
+
+1. Ler a primeira avaliação (0 a 10).
+2. Ler a segunda avaliação (0 a 10).
+3. Somar as duas avaliações.
+4. Dividir a soma por 2 para obter a média.
+5. Apresentar a média.
+6. Terminar.

@@ -1,0 +1,16 @@
+Resolução — 3.3 Preço final com desconto por escalão — pseudocódigo
+
+LER valor
+
+SE valor > 200 ENTÃO
+    desconto <- valor * 0.20
+SENÃO SE valor > 100 ENTÃO
+    desconto <- valor * 0.10
+SENÃO
+    desconto <- 0
+FIM SE
+
+total <- valor - desconto
+
+ESCREVER "Desconto: ", desconto
+ESCREVER "Valor final a pagar: ", total

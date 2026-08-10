@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_loginSimples"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 03:43:47 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAzOjMzOjE5ICI7MjYwNg=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAzOjQzOjQ3ICI7MTsyNzE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="user, pass, userTry, passTry" type="String" array="False" size=""/>
+            <assign variable="user" expression="&quot;admin&quot;"/>
+            <assign variable="pass" expression="&quot;1234&quot;"/>
+            <output expression="&quot;Introduza o nome do utilizador: &quot;" newline="True"/>
+            <input variable="userTry"/>
+            <output expression="&quot;Introduza a palavra passe: &quot;" newline="True"/>
+            <input variable="passTry"/>
+            <if expression="userTry == user And passTry == pass">
+                <then>
+                    <output expression="&quot;Login com sucesso&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Credenciais inv&#225;lidas&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

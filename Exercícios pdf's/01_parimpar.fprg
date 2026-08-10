@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_parimpar"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 03:24:35 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAyOjUwOjE5ICI7MjYwNA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAzOjI0OjM1ICI7MTsyNzEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira um n&#250;mero para verificar se &#233; par ou &#237;mpar: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <declare name="resto" type="Integer" array="False" size=""/>
+            <assign variable="resto" expression="numero % 2"/>
+            <if expression="resto == 0">
+                <then>
+                    <output expression="&quot;O n&#250;mero &quot; &amp; numero &amp; &quot; &#233; par.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O n&#250;mero &quot; &amp; numero &amp; &quot; &#233; &#237;mpar.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

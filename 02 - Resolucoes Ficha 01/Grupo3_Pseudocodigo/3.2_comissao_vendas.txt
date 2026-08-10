@@ -1,0 +1,11 @@
+Resolução — 3.2 Comissão de vendas — pseudocódigo
+
+LER venda
+
+SE venda > 5000 ENTÃO
+    comissao <- venda * 0.15
+SENÃO
+    comissao <- venda * 0.10
+FIM SE
+
+ESCREVER "Comissão: ", comissao

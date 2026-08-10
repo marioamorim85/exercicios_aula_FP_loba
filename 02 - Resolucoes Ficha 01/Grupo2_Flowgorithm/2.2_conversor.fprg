@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="conversor"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="dolares, taxa, euros" type="Real" array="False" size=""/>
+<output expression="&quot;Valor em dólares: &quot;" newline="True"/>
+<input variable="dolares"/>
+<output expression="&quot;Taxa de câmbio (ex.: 0.92): &quot;" newline="True"/>
+<input variable="taxa"/>
+<assign variable="euros" expression="dolares * taxa"/>
+<output expression="&quot;Valor em euros: &quot; &amp; euros" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

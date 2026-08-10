@@ -1,0 +1,14 @@
+Resolução — 3.1 Qualificar um lead (três níveis) — pseudocódigo
+
+LER orcamento
+LER interesse
+
+SE orcamento >= 10000 E interesse = "alto" ENTÃO
+    prioridade <- "Quente"
+SENÃO SE orcamento >= 5000 ENTÃO
+    prioridade <- "Morno"
+SENÃO
+    prioridade <- "Frio"
+FIM SE
+
+ESCREVER "Prioridade: ", prioridade

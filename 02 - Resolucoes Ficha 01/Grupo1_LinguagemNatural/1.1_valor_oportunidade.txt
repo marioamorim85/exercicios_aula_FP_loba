@@ -1,0 +1,8 @@
+Resolução — 1.1 Valor de uma oportunidade (linguagem natural)
+
+1. Ler o preço unitário.
+2. Ler o número de unidades.
+3. Ler o desconto (ex.: 0,10 para 10%).
+4. Calcular o valor: preço x unidades x (1 - desconto).
+5. Apresentar o valor da oportunidade.
+6. Terminar.

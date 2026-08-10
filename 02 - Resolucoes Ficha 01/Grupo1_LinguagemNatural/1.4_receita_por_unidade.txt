@@ -1,0 +1,7 @@
+Resolução — 1.4 Receita por unidade (linguagem natural)
+
+1. Ler o valor total do negócio.
+2. Ler o número de unidades vendidas.
+3. Calcular a receita por unidade: valor total a dividir pelo número de unidades.
+4. Apresentar a receita por unidade.
+5. Terminar.

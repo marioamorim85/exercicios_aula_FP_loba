@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_slide15"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 02:18:07 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjEyOjQxOjUwICI7MjYwMA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAyOjE4OjA3ICI7MTsyNzEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="orcamento" type="Real" array="False" size=""/>
+            <declare name="prioridade" type="String" array="False" size=""/>
+            <output expression="&quot;Or&#231;amento do lead: &quot;" newline="True"/>
+            <input variable="orcamento"/>
+            <if expression="orcamento &gt;= 10000">
+                <then>
+                    <assign variable="prioridade" expression="&quot;Quente&quot;"/>
+                </then>
+                <else>
+                    <if expression="orcamento &gt;= 5000">
+                        <then>
+                            <assign variable="prioridade" expression="&quot;Morno&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="prioridade" expression="&quot;Frio&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Prioridade: &quot; &amp; prioridade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

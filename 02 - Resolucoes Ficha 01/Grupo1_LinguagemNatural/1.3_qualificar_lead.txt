@@ -1,0 +1,8 @@
+Resolução — 1.3 Qualificar um lead (linguagem natural)
+
+1. Ler o orçamento do lead.
+2. Ler o orçamento mínimo aceitável.
+3. Comparar os dois valores:
+   - Se o orçamento for maior ou igual ao mínimo, escrever "Lead prioritário".
+   - Caso contrário, escrever "Lead para acompanhar".
+4. Terminar o processo.

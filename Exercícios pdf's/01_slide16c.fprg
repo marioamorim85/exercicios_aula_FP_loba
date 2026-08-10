@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_slide16c"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 02:50:09 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAyOjM5OjMxICI7MjYwNQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAyOjUwOjA5ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="orcamento" type="Real" array="False" size=""/>
+            <declare name="empresa" type="String" array="False" size=""/>
+            <output expression="&quot;Empresa: &quot;" newline="True"/>
+            <input variable="empresa"/>
+            <output expression="&quot;Or&#231;amento: &quot;" newline="True"/>
+            <input variable="orcamento"/>
+            <if expression="orcamento &gt; 0 And empresa != &quot;&quot;">
+                <then>
+                    <output expression="&quot;Lead v&#225;lido&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Faltam dados&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

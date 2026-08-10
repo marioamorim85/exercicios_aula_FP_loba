@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_slide16b"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 02:38:32 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAyOjMzOjA5ICI7MjYwNA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjAyOjM4OjMyICI7MTsyNzEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="orc1, orc2" type="Real" array="False" size=""/>
+            <output expression="&quot;Or&#231;amento do lead 1: &quot;" newline="True"/>
+            <input variable="orc1"/>
+            <output expression="&quot;Or&#231;amento do lead 2: &quot;" newline="True"/>
+            <input variable="orc2"/>
+            <if expression="orc1 &gt; orc2">
+                <then>
+                    <output expression="&quot;Lead 1&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="orc1 &lt; orc2">
+                        <then>
+                            <output expression="&quot;Lead 2&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Iguais&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

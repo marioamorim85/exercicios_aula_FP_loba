@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01_tabuada"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-04 04:57:53 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjA0OjIxOjA2ICI7MjYwMA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMDQ7IjA0OjU3OjUzICI7MTsyNzE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Fa&#231;a um algoritmo que leia um n&#250;mero inteiro e, de seguida, gere e mostre a sua tabuada.&#13;&#10;Depois de gerar a tabuada do n&#250;mero introduzido, deve perguntar ao utilizador se pretende gerar a tabuada de outro n&#250;mero, digitando:&#13;&#10;1 - para repetir&#13;&#10;2 - para sair"/>
+            <declare name="numero, i, opcao" type="Integer" array="False" size=""/>
+            <comment text="- numero, para guardar o n&#250;mero da tabuada&#13;&#10;- i (de inicial, ou imicializa&#231;&#227;o) para o contador do ciclo, normalmente de 1 a 10&#13;&#10;- opcao para guardar se o utilizador quer repetir ou sair"/>
+            <do expression="opcao == 1">
+                <output expression="&quot;Introduza o n&#250;mero que ser&#225; gerada a sua tabuada: &quot;" newline="True"/>
+                <input variable="numero"/>
+                <for variable="i" start="1" end="10" direction="inc" step="1">
+                    <output expression="numero &amp; &quot;X&quot; &amp; i &amp; &quot;= &quot; &amp; numero*i" newline="True"/>
+                </for>
+                <output expression="&quot;Deseja gerar outra tabuada?&quot;" newline="True"/>
+                <output expression="&quot;1 - Repetir&quot;" newline="True"/>
+                <output expression="&quot;2 - Sair&quot;" newline="True"/>
+                <input variable="opcao"/>
+                <while expression="opcao != 1 And opcao !=2">
+                    <output expression="&quot;Op&#231;&#227;o inv&#225;lida&quot;" newline="True"/>
+                    <output expression="&quot;1 - Repetir&quot;" newline="True"/>
+                    <output expression="&quot;2 - Sair&quot;" newline="True"/>
+                    <input variable="opcao"/>
+                </while>
+            </do>
+            <output expression="&quot;Programa encerrado - At&#233; breve&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
