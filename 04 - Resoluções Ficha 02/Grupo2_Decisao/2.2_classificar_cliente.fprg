@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2.2_classificar_cliente"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-10 02:59:30 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjUzOjU4ICI7MjYwNw=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjU5OjMwICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total" type="Real" array="False" size=""/>
+            <declare name="classificacao" type="String" array="False" size=""/>
+            <output expression="&quot;Total gasto pelo cliente: &quot;" newline="True"/>
+            <input variable="total"/>
+            <if expression="total &gt;= 5000">
+                <then>
+                    <assign variable="classificacao" expression="&quot;Ouro&quot;"/>
+                </then>
+                <else>
+                    <if expression="total &gt;= 1000">
+                        <then>
+                            <assign variable="classificacao" expression="&quot;Prata&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="classificacao" expression="&quot;Bronze&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Cliente: &quot; &amp; classificacao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

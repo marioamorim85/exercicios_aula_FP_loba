@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2.3_elegivel_desconto"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-10 03:12:24 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAzOjAwOjAzICI7MjU5MA=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAzOjEyOjI0ICI7MTsyNzA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="antigo" type="Boolean" array="False" size=""/>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <output expression="&quot;Cliente antigo? (true/false)&quot;" newline="True"/>
+            <input variable="antigo"/>
+            <output expression="&quot;Valor da compra: &quot;" newline="True"/>
+            <input variable="valor"/>
+            <if expression="antigo And valor &gt; 100">
+                <then>
+                    <output expression="&quot;Tem desconto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sem desconto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2.1_aprovar"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-10 02:53:13 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjQ2OjUyICI7MjYwMw=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTA7IjAyOjUzOjEzICI7MTsyNzA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="orcamento" type="Real" array="False" size=""/>
+            <output expression="&quot;Or&#231;amento do Lead: &quot;" newline="True"/>
+            <input variable="orcamento"/>
+            <if expression="orcamento &gt;= 1000">
+                <then>
+                    <output expression="&quot;Seguir&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Rever&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
