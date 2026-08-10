@@ -1,0 +1,13 @@
+Resolução - 3.1 Comissão por escala
+
+LER venda
+
+SE venda > 200 ENTÃO
+	comissao <- venda * 0.15
+SENÃO SE venda > 100 ENTÃO
+	comissao <- venda * 0.10
+SENÃO
+	comissão <- venda * 0.05
+FIM SE
+
+ESCREVER "Comissão: ", comissao

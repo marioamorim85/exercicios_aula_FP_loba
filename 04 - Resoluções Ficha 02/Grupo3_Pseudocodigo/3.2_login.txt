@@ -1,0 +1,10 @@
+Resolução - 3.2 Validar um login
+
+LER utilizador
+LER pass
+
+SE utilizador == "admin" E pass == "1234" ENTÃO
+	ESCREVER "Acesso autorizado"
+SENÃO
+	ESCREVER "Credenciais inválidas"
+FIM SE
