@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soma_media"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="n, i" type="Integer" array="False" size=""/>
+<declare name="total, valor, media" type="Real" array="False" size=""/>
+<output expression="&quot;Quantas oportunidades? &quot;" newline="True"/>
+<input variable="n"/>
+<assign variable="total" expression="0"/>
+<for variable="i" start="1" end="n" direction="inc" step="1">
+<output expression="&quot;Valor da oportunidade &quot; &amp; i &amp; &quot;: &quot;" newline="True"/>
+<input variable="valor"/>
+<assign variable="total" expression="total + valor"/>
+</for>
+<assign variable="media" expression="total / n"/>
+<output expression="&quot;Total: &quot; &amp; total" newline="True"/>
+<output expression="&quot;Média: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

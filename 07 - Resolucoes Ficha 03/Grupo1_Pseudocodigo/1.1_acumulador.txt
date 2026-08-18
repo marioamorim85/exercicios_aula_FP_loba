@@ -1,0 +1,11 @@
+Resolução — 1.1 Acumulador (pseudocódigo)
+
+LER n
+
+total <- 0
+PARA i DE 1 ATÉ n
+    LER valor
+    total <- total + valor
+FIM PARA
+
+ESCREVER "Total: ", total

@@ -1,0 +1,12 @@
+Resolução — 1.2 Percorrer um array para encontrar o maior (pseudocódigo)
+
+// orcamentos é um array de 5 posições, já preenchido
+
+maior <- orcamentos[0]
+PARA i DE 0 ATÉ 4
+    SE orcamentos[i] > maior ENTÃO
+        maior <- orcamentos[i]
+    FIM SE
+FIM PARA
+
+ESCREVER "Maior orçamento: ", maior

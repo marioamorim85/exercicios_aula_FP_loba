@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mini_crm"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="nomes" type="String" array="True" size="5"/>
+<declare name="orcamentos" type="Real" array="True" size="5"/>
+<declare name="i" type="Integer" array="False" size=""/>
+<declare name="total, media, maiorOrc" type="Real" array="False" size=""/>
+<declare name="nomeMaior" type="String" array="False" size=""/>
+<output expression="&quot;=== Registo de 5 leads ===&quot;" newline="True"/>
+<for variable="i" start="0" end="4" direction="inc" step="1">
+<output expression="&quot;Nome do lead &quot; &amp; (i + 1) &amp; &quot;: &quot;" newline="True"/>
+<input variable="nomes[i]"/>
+<output expression="&quot;Orçamento: &quot;" newline="True"/>
+<input variable="orcamentos[i]"/>
+</for>
+<output expression="&quot;--- Lista de leads ---&quot;" newline="True"/>
+<for variable="i" start="0" end="4" direction="inc" step="1">
+<output expression="nomes[i] &amp; &quot; - &quot; &amp; orcamentos[i]" newline="True"/>
+</for>
+<assign variable="total" expression="0"/>
+<assign variable="maiorOrc" expression="orcamentos[0]"/>
+<assign variable="nomeMaior" expression="nomes[0]"/>
+<for variable="i" start="0" end="4" direction="inc" step="1">
+<assign variable="total" expression="total + orcamentos[i]"/>
+<if expression="orcamentos[i] &gt; maiorOrc">
+<then>
+<assign variable="maiorOrc" expression="orcamentos[i]"/>
+<assign variable="nomeMaior" expression="nomes[i]"/>
+</then>
+<else>
+
+</else>
+</if>
+</for>
+<assign variable="media" expression="total / 5"/>
+<output expression="&quot;Média dos orçamentos: &quot; &amp; media" newline="True"/>
+<output expression="&quot;Lead com maior orçamento: &quot; &amp; nomeMaior &amp; &quot; (&quot; &amp; maiorOrc &amp; &quot;)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

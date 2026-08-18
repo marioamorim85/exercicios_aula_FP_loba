@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="06_slide_16c"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 11:53:32 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTg7IjExOjIzOjU3ICI7MjYxMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTg7IjExOjUzOjMyICI7MTsyNzE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, posMaior" type="Integer" array="False" size=""/>
+            <declare name="nomes" type="String" array="True" size="5"/>
+            <declare name="orcamentos" type="Real" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Nome &quot; &amp; i+1 &amp; &quot;:&quot;" newline="True"/>
+                <input variable="nomes[i]"/>
+                <while expression="nomes[i] == &quot;&quot;">
+                    <output expression="&quot;Nome inv&#225;lido&quot;" newline="True"/>
+                    <output expression="&quot;Nome &quot; &amp; i+1 &amp; &quot;:&quot;" newline="True"/>
+                    <input variable="nomes[i]"/>
+                </while>
+                <output expression="&quot;Or&#231;amento da empresa &quot; &amp; nomes[i] &amp; &quot;:&quot;" newline="True"/>
+                <input variable="orcamentos[i]"/>
+                <while expression="orcamentos[i] &lt;= 0">
+                    <output expression="&quot;Valor inv&#225;lido. Introduz um valor maior que 0.&quot;" newline="True"/>
+                    <output expression="&quot;Or&#231;amento da empresa &quot; &amp; nomes[i] &amp; &quot;:&quot;" newline="True"/>
+                    <input variable="orcamentos[i]"/>
+                </while>
+            </for>
+            <assign variable="posMaior" expression="0"/>
+            <for variable="i" start="1" end="4" direction="inc" step="1">
+                <if expression="orcamentos[i] &gt; orcamentos[posmaior]">
+                    <then>
+                        <assign variable="posMaior" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Lead com maior or&#231;amento: &quot; &amp; nomes[posMaior] &amp; &quot; com um valor de &quot; &amp; orcamentos[posMaior] &amp; &quot; euros.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

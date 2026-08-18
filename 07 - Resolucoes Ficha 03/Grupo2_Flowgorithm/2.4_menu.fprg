@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="menu"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="opcao" type="Integer" array="False" size=""/>
+<do expression="opcao != 0">
+<output expression="&quot;=== Gestão de Leads ===&quot;" newline="True"/>
+<output expression="&quot;1 - Adicionar lead&quot;" newline="True"/>
+<output expression="&quot;2 - Listar leads&quot;" newline="True"/>
+<output expression="&quot;0 - Sair&quot;" newline="True"/>
+<input variable="opcao"/>
+<if expression="opcao == 1">
+<then>
+<output expression="&quot;Lead adicionado!&quot;" newline="True"/>
+</then>
+<else>
+<if expression="opcao == 2">
+<then>
+<output expression="&quot;A listar leads...&quot;" newline="True"/>
+</then>
+<else>
+
+</else>
+</if>
+</else>
+</if>
+</do>
+<output expression="&quot;Programa encerrado. Até à próxima!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

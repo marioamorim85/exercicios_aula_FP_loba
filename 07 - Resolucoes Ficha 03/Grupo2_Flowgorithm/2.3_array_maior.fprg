@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="array_maior"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="orcamentos" type="Real" array="True" size="5"/>
+<declare name="i" type="Integer" array="False" size=""/>
+<declare name="total, maior" type="Real" array="False" size=""/>
+<for variable="i" start="0" end="4" direction="inc" step="1">
+<output expression="&quot;Orçamento do lead &quot; &amp; (i + 1) &amp; &quot;: &quot;" newline="True"/>
+<input variable="orcamentos[i]"/>
+</for>
+<assign variable="total" expression="0"/>
+<assign variable="maior" expression="orcamentos[0]"/>
+<for variable="i" start="0" end="4" direction="inc" step="1">
+<assign variable="total" expression="total + orcamentos[i]"/>
+<if expression="orcamentos[i] &gt; maior">
+<then>
+<assign variable="maior" expression="orcamentos[i]"/>
+</then>
+<else>
+
+</else>
+</if>
+</for>
+<output expression="&quot;Total: &quot; &amp; total" newline="True"/>
+<output expression="&quot;Maior orçamento: &quot; &amp; maior" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="06_slide_16a"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 09:57:26 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTg7IjA5OjM4OjE0ICI7MjYxNw=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDgtMTg7IjA5OjU3OjI2ICI7MTsyNzI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="orcamento, total, media" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Or&#231;amento &quot; &amp; i &amp; &quot;:&quot;" newline="True"/>
+                <input variable="orcamento"/>
+                <assign variable="total" expression="total + orcamento"/>
+            </for>
+            <assign variable="media" expression="total/5"/>
+            <output expression="&quot;Total: &quot; &amp; total" newline="True"/>
+            <output expression="&quot;M&#233;dia: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

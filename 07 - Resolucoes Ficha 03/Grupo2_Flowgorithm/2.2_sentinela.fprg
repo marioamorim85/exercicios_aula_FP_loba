@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sentinela"/>
+        <attribute name="authors" value="mario"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 10:00:00 "/>
+        <attribute name="created" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjEzOjU1ICI7MjYwMQ=="/>
+        <attribute name="edited" value="bWFyaW87TUFSSU8tQU1PUklNOzIwMjYtMDMtMTQ7IjA0OjQ1OjE2ICI7MTsyNzEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+<declare name="valor, total" type="Real" array="False" size=""/>
+<declare name="contador" type="Integer" array="False" size=""/>
+<assign variable="total" expression="0"/>
+<assign variable="contador" expression="0"/>
+<output expression="&quot;Orçamento do lead (0 para terminar): &quot;" newline="True"/>
+<input variable="valor"/>
+<while expression="valor != 0">
+<assign variable="total" expression="total + valor"/>
+<assign variable="contador" expression="contador + 1"/>
+<output expression="&quot;Orçamento do lead (0 para terminar): &quot;" newline="True"/>
+<input variable="valor"/>
+</while>
+<output expression="&quot;Nº de leads: &quot; &amp; contador" newline="True"/>
+<output expression="&quot;Total: &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
