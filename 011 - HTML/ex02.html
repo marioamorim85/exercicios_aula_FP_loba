@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+
+<!-- Conteúdo da página Web -->
+<body>
+    <header>
+        <h1>Bem-vindo ao meu exemplo de HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Secção 1: Introdução ao HTML</h2>
+            <p>
+                O HTML, ou <strong>Hypertext Markup Language</strong>, é a base de todas
+                as páginas Web. Foi criado por Tim Berners-Lee em 1991.
+                <em>É como o esqueleto de um site.</em>
+            </p>
+        </section>
+
+        <section>
+            <h2>Secção 2: Listas e formatação</h2>
+            <!-- Lista não ordenada com itens em forma de quadrado -->
+            <h3>Exemplo de Lista Não Ordenada</h3>
+            <ul type="square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+
+            <br>
+
+            <!-- Lista ordenada com os itens numerados -->
+            <h3>Exemplo de Lista Ordenada</h3>
+            <ol type="I">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+
+            <br>
+
+            <!-- Lista de definições -->
+            <h3>Lista de Definições</h3>
+            <dl>
+                <dt><strong>HTML</strong></dt>
+                <dd>Hypertext Markup language</dd>
+                <dt><strong>CSS</strong></dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt><strong>JS</strong></dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </section>
+
+        <br>
+
+        <section>
+            <h2>Secção 3: Imagens e Links</h2>
+            <p>
+                Aqui está uma imagem <a href="https://images.unsplash.com/photo-1788288542172-740e46ab1500?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank"> Goat</a>
+            </p>
+
+            <br>
+
+            <img src="assets/img/goat.jpg" alt="goat" width="25%">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Mário Amorim. Todos os direitos reservados. Contacto: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mario.amorim@example.com">mario.amorim@example.com</a></p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

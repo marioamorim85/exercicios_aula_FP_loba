@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Registo</title>
+  </head>
+  <body>
+    <h1>Formulário de Registo</h1>
+    <form id="formUser">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required />
+      <span class="erro" id="erro-nome"></span>
+
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+      <span class="erro" id="erro-email"></span>
+
+      <br />
+      <br />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required />
+      <span class="erro" id="erro-password"></span>
+      <br />
+      <br />
+      <button type="submit">Registar</button>
+      <br />
+      <br />
+      <div id="mensagem-sucesso"></div>
+      <br />
+      <h2>Registos Efectuados</h2>
+      <ul id="lista-registos"></ul>
+
+      <script>
+        // Selecionar o formulário e as mensagens de erro a lista de registos
+        const form = document.getElementById("formUser");
+        const erroNome = document.getElementById("erro-nome");
+        const erroEmail = document.getElementById("erro-email");
+        const erroPassword = document.getElementById("erro-password");
+        const mensagemSucesso = document.getElementById("mensagem-sucesso");
+        const listaRegistos = document.getElementById("lista-registos");
+
+        // Função para validar email
+        function validarEmail(email) {
+          return email.includes("@");
+        }
+
+        // Função para validar password
+        function validarPassword(password) {
+          return password.length >= 6;
+        }
+
+        // Evento de submissão
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          let valido = true;
+          // Limpa mensagens antereriores
+          erroNome.textContent = "";
+          erroEmail.textContent = "";
+          erroPassword.textContent = "";
+          mensagemSucesso.textContent = "";
+
+          // Valida nome
+          if (form.nome.value.trim() === "") {
+            erroNome.textContent = "O Nome é obrigatório.";
+            valido = false;
+          }
+          // Valida Email
+          if (!validarEmail(form.email.value)) {
+            erroEmail.textContent = "O email deve contar @.";
+            valido = false;
+          }
+          // Valida Password
+          if (!validarPassword(form.password.value)) {
+            erroPassword.textContent =
+              "A password deve ter pelo menos 6 caracteres.";
+            valido = false;
+          }
+
+          // Se tudo estiver válido
+          if (valido) {
+            const registo = document.createElement("li");
+            registo.textContent = form.nome.value;
+            listaRegistos.appendChild(registo);
+            mensagemSucesso.textContent = "Registo efectuado com sucesso!";
+            form.reset();
+          }
+        });
+      </script>
+    </form>
+  </body>
+</html>

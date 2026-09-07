@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Leads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titulo principal da aplicação -->
+    <h1>Gestão de Leads</h1>
+
+    <!-- Paragráfo a mostrar a quantidade de leads guardados -->
+     <p id="total">Total de leads: 0</p>
+
+     <!-- Formulário usado para criar e adicionar um novo lead -->
+    <form id="formLead">
+        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        <input type="number" id="orc" name="orc" placeholder="Orçamento" required>
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- O Javascript insere aqui a lista atualizada de Leads -->
+     <ul id="lista"></ul>
+
+     <!-- Carrega a lógica da aplicação depois de definir os elementos da página -->
+      <script src="app.js"></script>
+</body>
+</html>
